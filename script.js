@@ -51,7 +51,7 @@ var loader = new THREE.GLTFLoader();
 var mixer;
 var model;
 loader.load(
-  "https://raw.githubusercontent.com/baronwatts/models/master/robber.glb",
+  "https://github.com/Puneeth-A-R/Puneeth-A-R.github.io/blob/main/book.glb?raw=true",
   function (gltf) {
     gltf.scene.traverse(function (node) {
       if (node instanceof THREE.Mesh) {
