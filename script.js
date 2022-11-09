@@ -1,11 +1,11 @@
 //==================================================== CORS
-const cors = require('cors');
+/*const cors = require('cors');
 const corsOptions ={
     origin:'http://localhost:3000', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
-app.use(cors(corsOptions));
+app.use(cors(corsOptions));*/
 
 //==================================================== Beginning of script
 
@@ -51,7 +51,7 @@ var loader = new THREE.GLTFLoader();
 var mixer;
 var model;
 loader.load(
-  "book.glb",
+  "https://raw.githubusercontent.com/baronwatts/models/master/robber.glb",
   function (gltf) {
     gltf.scene.traverse(function (node) {
       if (node instanceof THREE.Mesh) {
