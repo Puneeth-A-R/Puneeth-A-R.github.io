@@ -40,7 +40,7 @@ var loader = new THREE.GLTFLoader();
 var mixer;
 var model;
 loader.load(
-  "https://github.com/Puneeth-A-R/Puneeth-A-R.github.io/blob/4803c5f4561235eaf01855ca859ceb942d1f54f9/book.glb",
+  "book.glb",
   function (gltf) {
     gltf.scene.traverse(function (node) {
       if (node instanceof THREE.Mesh) {
