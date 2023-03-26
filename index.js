@@ -1503,6 +1503,7 @@
                                 t.WebGL.gltfLoader.load("".concat(t.rootDir, "models/").concat(e.assetsToLoad[n], ".glb"), (function(t) {
                                     e.assets.models[e.assetsToLoad[n]] = t,
                                     o()
+                                    console.log(t)
                                 }
                                 ))
                             }
