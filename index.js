@@ -1564,7 +1564,7 @@
                         for (var i = 2; i < this.assetsToLoad.length; i++) {
                             var r = this.assets.models[this.assetsToLoad[i]].scene;
                             r.name = this.assetsToLoad[i];
-                            r.scale.set(0, 0, 0);
+                            r.scale.set(5, 5, 5);
                             var c = r.getObjectByProperty("type", "Mesh");
                             c.material = n,
                             console.log(c)
