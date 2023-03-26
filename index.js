@@ -1562,10 +1562,10 @@
                             repeatDelay: .5
                         });
                         for (var i = 2; i < this.assetsToLoad.length; i++) {
-                            this.assets.models[i].scene.scale.set(0, 0, 0);
                             var r = this.assets.models[this.assetsToLoad[i]].scene;
                             r.name = this.assetsToLoad[i];
                             var c = r.getObjectByProperty("type", "Mesh");
+                            c.scale.set(0, 0, 0);
                             c.material = n,
                             c.scale.setScalar(0),
                             "phone" === r.name && (r.children[1].scale.setScalar(0),
