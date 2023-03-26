@@ -1503,7 +1503,7 @@
                                 t.WebGL.gltfLoader.load("".concat(t.rootDir, "models/").concat(e.assetsToLoad[n], ".glb"), (function(t) {
                                     e.assets.models[e.assetsToLoad[n]] = t,
                                     o()
-                                    console.log(t)
+                                    //console.log(t)
                                 }
                                 ))
                             }
@@ -1563,6 +1563,7 @@
                             repeatDelay: .5
                         });
                         for (var i = 2; i < this.assetsToLoad.length; i++) {
+                            this.assets.models[i].scale.set(0, 0, 0);
                             var r = this.assets.models[this.assetsToLoad[i]].scene;
                             r.name = this.assetsToLoad[i];
                             var c = r.getObjectByProperty("type", "Mesh");
