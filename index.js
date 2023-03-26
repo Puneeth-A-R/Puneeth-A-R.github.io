@@ -1567,7 +1567,7 @@
                             var c = r.getObjectByProperty("type", "Mesh");
                             c.scale.set(0, 0, 0);
                             c.material = n,
-                            c.scale.setScalar(0),
+                            console.log(c)
                             "phone" === r.name && (r.children[1].scale.setScalar(0),
                             r.children[1].material = this.phoneMaterial),
                             this.heroModels.add(r),
