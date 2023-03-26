@@ -5171,8 +5171,8 @@
                 (a = [{
                     key: "build",
                     value: function() {
-                        this.item = this.assets.models.bookmark.scene;
                         this.item = this.assets.models.bookmark.scale.set(0, 0, 0);
+                        this.item = this.assets.models.bookmark.scene;
                         var e = new r.MeshMatcapMaterial({
                             skinning: !0,
                             matcap: t.WebGL.assets.textures.matcap,
