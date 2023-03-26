@@ -1564,7 +1564,6 @@
                         for (var i = 2; i < this.assetsToLoad.length; i++) {
                             var r = this.assets.models[this.assetsToLoad[i]].scene;
                             r.name = this.assetsToLoad[i];
-                            r.scale.set(5, 5, 5);
                             var c = r.getObjectByProperty("type", "Mesh");
                             c.material = n,
                             console.log(c)
@@ -1576,7 +1575,7 @@
                                 rotation: c.rotation.clone()
                             }),
                             this.params.modelScales.push({
-                                scale: 0
+                                scale: 5
                             })
                         }
                         this.heroModelsCount = this.heroModels.children.length,
