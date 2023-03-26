@@ -1575,11 +1575,11 @@
                                 rotation: c.rotation.clone()
                             }),
                             this.params.modelScales.push({
-                                scale: 5
+                                scale: 0
                             })
                         }
                         this.heroModelsCount = this.heroModels.children.length,
-                        t.WebGL.scene.add(this.heroModels),
+                        t.WebGL.scene.add(this.heroModels[1]),
                         this.models.bolt = this.assets.models.bolt.scene,
                         this.models.bolt.children[0].material.envMap = this.assets.textures.hdri,
                         this.models.bolt.children[0].material.reflectivity = 1,
