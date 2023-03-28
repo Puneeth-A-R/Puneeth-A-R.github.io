@@ -184,7 +184,107 @@
         </section>
    <section id="news" class="news section" data-inview="" data-callback="NEWS_INVIEW" data-component="news" style="visibility: hidden;"> </section>
    <section id="jobs" class="jobs section" data-inview="" data-callback="JOBS_INVIEW" data-component="jobs" style="visibility: hidden;"> </section>
-   <footer class="footer" data-inview="" data-callback="FOOTER_INVIEW" data-component="footer" style="visibility: hidden;"> </footer>
+   <footer class="footer" data-inview="" data-callback="FOOTER_INVIEW" data-component="footer" style="visibility: hidden;">
+         <div class="footer__content">
+    <h5 class="h2 footer__title" data-component="splitter" data-type="chars"> <div style="position: relative; display: inline-block; opacity: 0;" class="target">S</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">t</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">a</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">y</div> <div style="position: relative; display: inline-block; opacity: 0;" class="target">u</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">p</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">d</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">a</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">t</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">e</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">d</div></h5>
+
+    <div class="footer__form-wrapper">
+      <form class="footer__form js-footer-form" data-message="false">
+        <div class="footer__input-wrap">
+          <input class="footer__input p1 js-form-input" placeholder="Your email address" name="email" type="email" aria-label="Email" aria-required="true" required="">
+          <button type="submit" class="footer__canvas-wrap js-submit-footer-form" aria-label="Subscribe">
+            <canvas id="footer-button-canvas" class="footer__webgl-button" width="50" height="50" style="width: 50px; height: 50px;"></canvas>
+          </button>
+        </div>
+        <div class="footer__message">
+          <p class="p3">Definitely don't press this big red button</p>
+          <span class="pill pill--green js-form-success">Super, we'll be in touch</span>
+          <span class="pill pill--red js-form-error">Error</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer__nav">
+      <div class="container footer__nav-container">
+        <div class="footer__nav-svg footer__nav-svg--tl"><svg viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.034 1.06711L11.5255 7.4563C11.5009 7.55928 11.5461 7.66639 11.6324 7.71994L20.4861 13.3594C21.1355 13.7755 21.1766 14.7106 20.5683 15.1802L15.7633 18.8753L9.33472 23.8186C8.68939 24.3129 7.781 23.7238 7.97008 22.9329L9.47858 16.5437C9.50324 16.4407 9.45803 16.3336 9.37171 16.2801L0.513899 10.6406C-0.135536 10.2245 -0.17664 9.28943 0.431692 8.81982L5.23669 5.12472L11.6653 0.181434C12.3106 -0.312894 13.219 0.276181 13.034 1.06711Z"></path>
+          </svg>
+        </div>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="https://twitter.com/SuperlistHQ" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="https://superlist.recruitee.com/" target="_blank" rel="noopener noreferrer">Jobs</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <div class="footer__nav-link footer__nav-link--modal-trigger" data-modal-open="false">
+              <span class="modal__trigger">Legal</span>
+
+              <div class="modal" data-component="modal" data-open="false">
+                <button class="modal__close">
+                  <svg version="1.1" viewBox="0 0 49 49" xml:space="preserve" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" fill="none">
+                    <g>
+                      <line x1="5" y1="44" x2="44" y2="5"></line>
+                    </g>
+                    <g>
+                      <line x1="5" y1="44" x2="44" y2="5"></line>
+                    </g>
+                    <g>
+                      <line x1="5" y1="5" x2="44" y2="44"></line>
+                    </g>
+                  </svg>
+                </button>
+                <div class="modal__inner">
+                  <h4>Superlist Software GmbH</h4>
+                  <div>
+                    <p>c/o Kubota<br>Rückerstrasse 5<br>10119 Berlin<br><a href="mailto:hello@superlist.com">hello@superlist.com</a></p>
+                  </div>
+                  <div>
+                    <h4>Managing Director</h4>
+                    <p>Steffen Kiedel, Ben Kubota</p>
+                  </div>
+                  <div>
+                    <h4>Commercial Register</h4>
+                    <p>Local Court (Amtsgericht) of Charlottenburg HRB 219633 B<br><br>We assume no liability for the
+                      content of websites linked to us. The owners of these linked websites take sole responsibility for
+                      their contents.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="/privacy.html" rel="noopener noreferrer">Privacy</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <div class="footer__nav-label">
+              <div class="footer__nav-svg footer__nav-svg--xs"><svg viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.034 1.06711L11.5255 7.4563C11.5009 7.55928 11.5461 7.66639 11.6324 7.71994L20.4861 13.3594C21.1355 13.7755 21.1766 14.7106 20.5683 15.1802L15.7633 18.8753L9.33472 23.8186C8.68939 24.3129 7.781 23.7238 7.97008 22.9329L9.47858 16.5437C9.50324 16.4407 9.45803 16.3336 9.37171 16.2801L0.513899 10.6406C-0.135536 10.2245 -0.17664 9.28943 0.431692 8.81982L5.23669 5.12472L11.6653 0.181434C12.3106 -0.312894 13.219 0.276181 13.034 1.06711Z"></path>
+                </svg>
+              </div>
+              © Superlist 2021
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__fig-wrapper">
+        <figure class="footer__fig">
+          <img class="footer__fig-desktop" src="/images/laptop.png" alt="Superlist in use">
+          <img class="footer__fig-mobile" src="/images/phone.png" alt="Superlist in use">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bg-wrapper">
+    <div class="footer__bg-svg" style="transform: translate(0px, 0px);"><svg viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.034 1.06711L11.5255 7.4563C11.5009 7.55928 11.5461 7.66639 11.6324 7.71994L20.4861 13.3594C21.1355 13.7755 21.1766 14.7106 20.5683 15.1802L15.7633 18.8753L9.33472 23.8186C8.68939 24.3129 7.781 23.7238 7.97008 22.9329L9.47858 16.5437C9.50324 16.4407 9.45803 16.3336 9.37171 16.2801L0.513899 10.6406C-0.135536 10.2245 -0.17664 9.28943 0.431692 8.81982L5.23669 5.12472L11.6653 0.181434C12.3106 -0.312894 13.219 0.276181 13.034 1.06711Z"></path>
+      </svg>
+    </div>
+  </div>
+   </footer>
       </div>
     </main>
     <div class="p-cover" style="pointer-events: none;"></div>
