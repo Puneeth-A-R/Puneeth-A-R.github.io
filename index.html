@@ -187,7 +187,24 @@
    <footer class="footer" data-inview="" data-callback="FOOTER_INVIEW" data-component="footer" style="visibility: hidden;">
          <div class="footer__content">
     <h5 class="h2 footer__title" data-component="splitter" data-type="chars"> <div style="position: relative; display: inline-block; opacity: 0;" class="target">S</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">t</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">a</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">y</div> <div style="position: relative; display: inline-block; opacity: 0;" class="target">u</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">p</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">d</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">a</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">t</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">e</div><div style="position: relative; display: inline-block; opacity: 0;" class="target">d</div></h5>
-    <div class="footer__nav">
+    
+      <div class="footer__form-wrapper">
+      <form class="footer__form js-footer-form" data-message="false">
+        <div class="footer__input-wrap">
+          <input class="footer__input p1 js-form-input" placeholder="Your email address" name="email" type="email" aria-label="Email" aria-required="true" required="">
+          <button type="submit" class="footer__canvas-wrap js-submit-footer-form" aria-label="Subscribe">
+            <canvas id="footer-button-canvas" class="footer__webgl-button" width="50" height="50" style="width: 50px; height: 50px;"></canvas>
+          </button>
+        </div>
+        <div class="footer__message">
+          <p class="p3">Definitely don't press this big red button</p>
+          <span class="pill pill--green js-form-success">Super, we'll be in touch</span>
+          <span class="pill pill--red js-form-error">Error</span>
+        </div>
+      </form>
+    </div>
+      
+      <div class="footer__nav">
       <div class="container footer__nav-container">
         <div class="footer__nav-svg footer__nav-svg--tl"><svg viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.034 1.06711L11.5255 7.4563C11.5009 7.55928 11.5461 7.66639 11.6324 7.71994L20.4861 13.3594C21.1355 13.7755 21.1766 14.7106 20.5683 15.1802L15.7633 18.8753L9.33472 23.8186C8.68939 24.3129 7.781 23.7238 7.97008 22.9329L9.47858 16.5437C9.50324 16.4407 9.45803 16.3336 9.37171 16.2801L0.513899 10.6406C-0.135536 10.2245 -0.17664 9.28943 0.431692 8.81982L5.23669 5.12472L11.6653 0.181434C12.3106 -0.312894 13.219 0.276181 13.034 1.06711Z"></path>
